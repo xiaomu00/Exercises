@@ -1,17 +1,12 @@
 //#include<iostream>
 //#include<stack>
 //using namespace std;
-//
-//
-//
-//////////题目3 用两个队列实现链表
+
+//////////题目4 用两个队列实现链表
 //////
 //////////问题描述:
 //////////////用两个队列实现链表
-//////
-////
-//
-//
+
 //template <class T>
 //class myqueue
 //{
