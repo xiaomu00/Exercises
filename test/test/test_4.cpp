@@ -58,7 +58,6 @@
 //{
 //	if (0 == st2.size())
 //	{
-//
 //		while (st1.size() != 0)
 //		{
 //			T& num = st1.top();
