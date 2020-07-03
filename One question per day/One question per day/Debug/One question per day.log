@@ -1,0 +1,14 @@
+﻿生成启动时间为 2020/7/3 星期五 9:25:55。
+     1>项目“E:\学习\比特\每日一题\a_编程\One question per day\One question per day\One question per day.vcxproj”在节点 2 上(Build 个目标)。
+     1>ClCompile:
+         D:\software\VS 2013\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt day01_1.cpp
+         day01_1.cpp
+     1>e:\学习\比特\每日一题\a_编程\one question per day\one question per day\day01_1.cpp(42): warning C4018: “<”: 有符号/无符号不匹配
+       Link:
+         D:\software\VS 2013\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\学习\比特\每日一题\a_编程\One question per day\Debug\One question per day.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:\学习\比特\每日一题\a_编程\One question per day\Debug\One question per day.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\学习\比特\每日一题\a_编程\One question per day\Debug\One question per day.lib" /MACHINE:X86 Debug\day01_1.obj
+         One question per day.vcxproj -> E:\学习\比特\每日一题\a_编程\One question per day\Debug\One question per day.exe
+     1>已完成生成项目“E:\学习\比特\每日一题\a_编程\One question per day\One question per day\One question per day.vcxproj”(Build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:00.89
