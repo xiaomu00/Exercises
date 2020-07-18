@@ -1,58 +1,55 @@
 #include<iostream>
+#include<vector>
 using namespace std;
 
-//int sum(int m, int n)
-//{
-//	if (0 == m || 0 == n)
-//		return 1;
-//	else
-//		return sum(m, n - 1) + sum(m - 1, n);
-//}
-//
-//
-//int main()
-//{
-//	int m, n;
-//	while (cin >> m >> n)
-//	{
-//		int S = sum(m, n);
-//		cout << S << endl;
-//
-//	}
-//	return 0;
-//}
 
+//////题目27  二叉搜索树的后序遍历序列
+//////输入一个整数数组，判断该数组是不是某二叉搜索树的后序遍历的结果。如果是则输出Yes, 否则输出No。假设输入的数组的任意两个数字都互不相同。
+//////链接：https ://www.nowcoder.com/questionTerminal/a861533d45854474ac791d90e447bafd
 
-
-
-class A
-{
+class Solution {
 public:
-	int a;
-	int b;
-	virtual void f()
-	{}
-	A(int m, int n) :a(m), b(n)
-	{}
-	~A()
-	{}
-	int geta()
-	{
-		return a;
-	}
-	int getb()
-	{
-		return b;
-	}
+	bool VerifySquenceOfBST(vector<int> sequence) {
+		int n = sequence.size();
+		if (!n)
+			return false;
+		int root = sequence[n - 1];
+		int i = 0;
+		for (i; i<n - 1; ++i)
+		{
+			if (sequence[i]>root)
+				break;
+		}
+		int j = i;
+		for (j; j<n - 1; ++j)
+		{
+			if (sequence[j]<root)
+				return false;
+		}
 
+		vector<int> lift;
+		for (int a = 0; a<i; ++a)
+			lift.push_back(sequence[a]);
+		bool lf = true;
+		if (lift.size()!=0)
+			lf = VerifySquenceOfBST(lift);
+
+		vector<int> right;
+		for (int a = i; a<n - 1; ++a)
+			right.push_back(sequence[a]);
+		bool rg = true;
+		if (right.size()!=0)
+			rg= VerifySquenceOfBST(right);
+
+		return lf&&rg;
+	}
 };
 
 int main()
 {
-
-	A a(5,10);
-	int *p = (int*)&a;
-	*(p + 0) = 100;
-	*(p + 1) = 200;
-	cout << a.geta() << "  " << a.getb();
+	vector<int> v = { 7, 4, 6, 5 };
+	Solution s;
+	bool b=s.VerifySquenceOfBST(v);
+	cout << b << endl;
+	
 }
