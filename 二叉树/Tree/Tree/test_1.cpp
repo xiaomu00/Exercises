@@ -2,6 +2,7 @@
 
 ////´´½¨¶þ²æÊ÷
 
+
 MyTree::MyTree(const int* s)
 {
 	int i = 0;
