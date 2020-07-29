@@ -1,4 +1,5 @@
 #include<iostream>
+#include<vector>
 using namespace std;
 
 ////Á´½Ó£ºhttps://www.nowcoder.com/questionTerminal/b736e784e3e34731af99065031301bca
