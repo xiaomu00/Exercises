@@ -10,6 +10,7 @@
 //////////////pop() --移除栈顶元素
 //////////////top() --获取栈顶元素
 //////////////empty() --返回栈是否为空
+
 //class MyStack {
 //public:
 //	/** Initialize your data structure here. */
